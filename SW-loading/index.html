@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW-LOADING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="loading-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Server Logo" class="server-logo">
+        </div>
+        <div class="info-container">
+            <h1 id="server-name">YOUR SERVER NAME HERE!</h1>
+        </div>
+        <div class="loading-bar-container">
+            <div class="loading-bar">
+                <div class="loading-bar-fill" id="loading-bar-fill"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="music-info">
+                <span id="music-name">Music  loading...</span>
+            </div>
+            <div class="music-controls">
+                <button id="play-button" class="control-button">Play</button>
+                <button id="stop-button" class="control-button">Stop</button>
+                <button id="next-button" class="control-button">Next</button>
+                <button id="mute-button" class="control-button">Mute</button>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+    </div>
+    <audio id="background-music" autoplay></audio>
+    <script src="script.js"></script>
+</body>
+</html>
